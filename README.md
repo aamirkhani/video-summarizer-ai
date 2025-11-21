@@ -7,7 +7,7 @@
 
 An intelligent video summarization platform that extracts key segments from videos using advanced speech analysis and LLM-powered content understanding. Transform long videos into concise, meaningful summaries automatically.
 
-![Main Interface](screenshots/main-interface.png)
+![Main Interface](screenshots/webapp_screenshot_1.png)
 
 ## ✨ Features
 
@@ -26,7 +26,7 @@ An intelligent video summarization platform that extracts key segments from vide
 - **⚡ Fast Processing**: Optimized pipeline for quick video summarization
 - **🔒 Privacy First**: All processing happens locally on your machine
 
-![Processing Demo](screenshots/processing-demo.png)
+![Processing Demo](screenshots/webapp_screenshot_2.png)
 
 ## 🛠️ How It Works
 
@@ -82,7 +82,7 @@ python app.py
 ```
 Then open `http://localhost:5000` in your browser.
 
-![Web Interface](screenshots/web-interface.png)
+![Web Interface](screenshots/webapp_screenshot_3.png)
 
 ### 💻 Command Line Interface
 ```bash
@@ -128,7 +128,7 @@ video-summarizer-ai/
 
 ## 📊 Example Output
 
-![Results Dashboard](screenshots/results-dashboard.png)
+![Results Dashboard](screenshots/webapp_screenshot_2.png)
 
 The system will:
 1. 📤 **Upload/Process** your video through the web interface
