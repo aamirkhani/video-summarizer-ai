@@ -1,0 +1,63 @@
+{
+  "id": "product_demo_01",
+  "title": "Software Product Demo",
+  "category": "Business",
+  "description": "Live demonstration of new software features",
+  "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+  "expected_duration": "15s",
+  "tags": [
+    "demo",
+    "software",
+    "features"
+  ],
+  "processing_result": {
+    "input_video": "samples/originals/product_demo_01.mp4",
+    "output_video": "samples/summaries/product_demo_01_summary.mp4",
+    "transcript": {
+      "full_text": " Trecar isso!",
+      "transcript": [
+        {
+          "word": "Trecar",
+          "start": 0.0,
+          "end": 0.6
+        },
+        {
+          "word": "isso!",
+          "start": 0.6,
+          "end": 0.92
+        }
+      ],
+      "segments": [
+        {
+          "text": " Trecar isso!",
+          "start": 0.0,
+          "end": 0.92,
+          "words": [
+            {
+              "word": "Trecar",
+              "start": 0.0,
+              "end": 0.6
+            },
+            {
+              "word": "isso!",
+              "start": 0.6,
+              "end": 0.92
+            }
+          ]
+        }
+      ]
+    },
+    "summary_segments": [
+      {
+        "start_time": 0.0,
+        "end_time": 0.92,
+        "importance": 9,
+        "topic": "introduction",
+        "reason": "Opening segment"
+      }
+    ]
+  },
+  "processed_at": "2025-08-12T10:39:09.829683",
+  "original_file": "samples/originals/product_demo_01.mp4",
+  "summary_file": "samples/summaries/product_demo_01_summary.mp4"
+}

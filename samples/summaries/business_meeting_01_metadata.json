@@ -1,0 +1,403 @@
+{
+  "id": "business_meeting_01",
+  "title": "Team Strategy Meeting",
+  "category": "Business",
+  "description": "Corporate team discussing quarterly goals and strategies",
+  "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  "expected_duration": "596s",
+  "tags": [
+    "meeting",
+    "strategy",
+    "business"
+  ],
+  "processing_result": {
+    "input_video": "samples/originals/business_meeting_01.mp4",
+    "output_video": "samples/summaries/business_meeting_01_summary.mp4",
+    "transcript": {
+      "full_text": " Nocop\u65af someone Cold You a home for anomaly. Heavenly Life code. WTF. we have blast land but forgot to rip it off ritly car Breaking the Mirror",
+      "transcript": [
+        {
+          "word": "Nocop\u65af",
+          "start": 118.58,
+          "end": 119.98
+        },
+        {
+          "word": "someone",
+          "start": 145.7,
+          "end": 147.1
+        },
+        {
+          "word": "Cold",
+          "start": 178.57999999999998,
+          "end": 179.98
+        },
+        {
+          "word": "You",
+          "start": 252.68,
+          "end": 254.08
+        },
+        {
+          "word": "a",
+          "start": 254.08,
+          "end": 254.32
+        },
+        {
+          "word": "home",
+          "start": 301.24,
+          "end": 302.64
+        },
+        {
+          "word": "for",
+          "start": 302.64,
+          "end": 303.24
+        },
+        {
+          "word": "anomaly.",
+          "start": 328.90000000000003,
+          "end": 330.3
+        },
+        {
+          "word": "Heavenly",
+          "start": 331.82000000000005,
+          "end": 333.22
+        },
+        {
+          "word": "Life",
+          "start": 333.22,
+          "end": 333.22
+        },
+        {
+          "word": "code.",
+          "start": 333.22,
+          "end": 333.22
+        },
+        {
+          "word": "WTF.",
+          "start": 359.78000000000003,
+          "end": 361.18
+        },
+        {
+          "word": "we",
+          "start": 388.76000000000005,
+          "end": 390.16
+        },
+        {
+          "word": "have",
+          "start": 390.16,
+          "end": 390.16
+        },
+        {
+          "word": "blast",
+          "start": 390.16,
+          "end": 391.16
+        },
+        {
+          "word": "land",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "but",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "forgot",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "to",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "rip",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "it",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "off",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "ritly",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "car",
+          "start": 391.16,
+          "end": 391.16
+        },
+        {
+          "word": "Breaking",
+          "start": 479.76000000000005,
+          "end": 481.16
+        },
+        {
+          "word": "the",
+          "start": 481.16,
+          "end": 481.16
+        },
+        {
+          "word": "Mirror",
+          "start": 481.16,
+          "end": 481.16
+        }
+      ],
+      "segments": [
+        {
+          "text": " Nocop\u65af",
+          "start": 118.58,
+          "end": 119.98,
+          "words": [
+            {
+              "word": "Nocop\u65af",
+              "start": 118.58,
+              "end": 119.98
+            }
+          ]
+        },
+        {
+          "text": " someone",
+          "start": 145.7,
+          "end": 147.1,
+          "words": [
+            {
+              "word": "someone",
+              "start": 145.7,
+              "end": 147.1
+            }
+          ]
+        },
+        {
+          "text": " Cold",
+          "start": 178.57999999999998,
+          "end": 179.98,
+          "words": [
+            {
+              "word": "Cold",
+              "start": 178.57999999999998,
+              "end": 179.98
+            }
+          ]
+        },
+        {
+          "text": "",
+          "start": 179.98,
+          "end": 179.98,
+          "words": []
+        },
+        {
+          "text": " You a",
+          "start": 252.68,
+          "end": 254.32,
+          "words": [
+            {
+              "word": "You",
+              "start": 252.68,
+              "end": 254.08
+            },
+            {
+              "word": "a",
+              "start": 254.08,
+              "end": 254.32
+            }
+          ]
+        },
+        {
+          "text": " home",
+          "start": 301.24,
+          "end": 302.64,
+          "words": [
+            {
+              "word": "home",
+              "start": 301.24,
+              "end": 302.64
+            }
+          ]
+        },
+        {
+          "text": " for",
+          "start": 302.64,
+          "end": 303.24,
+          "words": [
+            {
+              "word": "for",
+              "start": 302.64,
+              "end": 303.24
+            }
+          ]
+        },
+        {
+          "text": " anomaly.",
+          "start": 328.90000000000003,
+          "end": 330.3,
+          "words": [
+            {
+              "word": "anomaly.",
+              "start": 328.90000000000003,
+              "end": 330.3
+            }
+          ]
+        },
+        {
+          "text": " Heavenly Life code.",
+          "start": 331.82000000000005,
+          "end": 333.22,
+          "words": [
+            {
+              "word": "Heavenly",
+              "start": 331.82000000000005,
+              "end": 333.22
+            },
+            {
+              "word": "Life",
+              "start": 333.22,
+              "end": 333.22
+            },
+            {
+              "word": "code.",
+              "start": 333.22,
+              "end": 333.22
+            }
+          ]
+        },
+        {
+          "text": " WTF.",
+          "start": 359.78000000000003,
+          "end": 361.18,
+          "words": [
+            {
+              "word": "WTF.",
+              "start": 359.78000000000003,
+              "end": 361.18
+            }
+          ]
+        },
+        {
+          "text": " we have blast land but forgot to rip it off ritly car",
+          "start": 388.76000000000005,
+          "end": 391.16,
+          "words": [
+            {
+              "word": "we",
+              "start": 388.76000000000005,
+              "end": 390.16
+            },
+            {
+              "word": "have",
+              "start": 390.16,
+              "end": 390.16
+            },
+            {
+              "word": "blast",
+              "start": 390.16,
+              "end": 391.16
+            },
+            {
+              "word": "land",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "but",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "forgot",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "to",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "rip",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "it",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "off",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "ritly",
+              "start": 391.16,
+              "end": 391.16
+            },
+            {
+              "word": "car",
+              "start": 391.16,
+              "end": 391.16
+            }
+          ]
+        },
+        {
+          "text": " Breaking the Mirror",
+          "start": 479.76000000000005,
+          "end": 481.16,
+          "words": [
+            {
+              "word": "Breaking",
+              "start": 479.76000000000005,
+              "end": 481.16
+            },
+            {
+              "word": "the",
+              "start": 481.16,
+              "end": 481.16
+            },
+            {
+              "word": "Mirror",
+              "start": 481.16,
+              "end": 481.16
+            }
+          ]
+        }
+      ]
+    },
+    "summary_segments": [
+      {
+        "start_time": 118.58,
+        "end_time": 119.98,
+        "importance": 9,
+        "topic": "introduction",
+        "reason": "Opening segment"
+      },
+      {
+        "start_time": 302.64,
+        "end_time": 303.24,
+        "importance": 8,
+        "topic": "main_content",
+        "reason": "Middle segment with key content"
+      },
+      {
+        "start_time": 466.16,
+        "end_time": 481.16,
+        "importance": 7,
+        "topic": "conclusion",
+        "reason": "Closing segment"
+      }
+    ]
+  },
+  "processed_at": "2025-08-12T10:38:31.246212",
+  "original_file": "samples/originals/business_meeting_01.mp4",
+  "summary_file": "samples/summaries/business_meeting_01_summary.mp4"
+}

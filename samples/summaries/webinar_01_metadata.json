@@ -1,0 +1,133 @@
+{
+  "id": "webinar_01",
+  "title": "Marketing Webinar",
+  "category": "Business",
+  "description": "Digital marketing strategies for 2024",
+  "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+  "expected_duration": "15s",
+  "tags": [
+    "webinar",
+    "marketing",
+    "digital"
+  ],
+  "processing_result": {
+    "input_video": "samples/originals/webinar_01.mp4",
+    "output_video": "samples/summaries/webinar_01_summary.mp4",
+    "transcript": {
+      "full_text": " Nous\ufffd antique l\u0bb0me plus des soften vecour photo showed",
+      "transcript": [
+        {
+          "word": "Nous\ufffd",
+          "start": 6.399999999999999,
+          "end": 7.799999999999999
+        },
+        {
+          "word": "antique",
+          "start": 7.799999999999999,
+          "end": 9.2
+        },
+        {
+          "word": "l\u0bb0me",
+          "start": 9.2,
+          "end": 9.2
+        },
+        {
+          "word": "plus",
+          "start": 9.2,
+          "end": 15.02
+        },
+        {
+          "word": "des",
+          "start": 15.02,
+          "end": 15.02
+        },
+        {
+          "word": "soften",
+          "start": 15.02,
+          "end": 15.02
+        },
+        {
+          "word": "vecour",
+          "start": 15.02,
+          "end": 15.02
+        },
+        {
+          "word": "photo",
+          "start": 15.02,
+          "end": 15.02
+        },
+        {
+          "word": "showed",
+          "start": 15.02,
+          "end": 15.02
+        }
+      ],
+      "segments": [
+        {
+          "text": " Nous\ufffd antique l\u0bb0me plus des soften vecour photo showed",
+          "start": 6.399999999999999,
+          "end": 15.02,
+          "words": [
+            {
+              "word": "Nous\ufffd",
+              "start": 6.399999999999999,
+              "end": 7.799999999999999
+            },
+            {
+              "word": "antique",
+              "start": 7.799999999999999,
+              "end": 9.2
+            },
+            {
+              "word": "l\u0bb0me",
+              "start": 9.2,
+              "end": 9.2
+            },
+            {
+              "word": "plus",
+              "start": 9.2,
+              "end": 15.02
+            },
+            {
+              "word": "des",
+              "start": 15.02,
+              "end": 15.02
+            },
+            {
+              "word": "soften",
+              "start": 15.02,
+              "end": 15.02
+            },
+            {
+              "word": "vecour",
+              "start": 15.02,
+              "end": 15.02
+            },
+            {
+              "word": "photo",
+              "start": 15.02,
+              "end": 15.02
+            },
+            {
+              "word": "showed",
+              "start": 15.02,
+              "end": 15.02
+            }
+          ]
+        }
+      ]
+    },
+    "summary_segments": [
+      {
+        "start_time": 6.399999999999999,
+        "end_time": 15.02,
+        "importance": 9,
+        "topic": "introduction",
+        "reason": "Opening segment"
+      }
+    ]
+  },
+  "processed_at": "2025-08-12T10:39:15.574103",
+  "original_file": "samples/originals/webinar_01.mp4",
+  "summary_file": "samples/summaries/webinar_01_summary.mp4"
+}

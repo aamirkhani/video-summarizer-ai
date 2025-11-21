@@ -1,0 +1,121 @@
+{
+  "id": "tutorial_01",
+  "title": "Python Programming Tutorial",
+  "category": "Education",
+  "description": "Step-by-step Python programming for beginners",
+  "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+  "expected_duration": "15s",
+  "tags": [
+    "tutorial",
+    "python",
+    "programming"
+  ],
+  "processing_result": {
+    "input_video": "samples/originals/tutorial_01.mp4",
+    "output_video": "samples/summaries/tutorial_01_summary.mp4",
+    "transcript": {
+      "full_text": " Oh! I'm a monster! Yeah!",
+      "transcript": [
+        {
+          "word": "Oh!",
+          "start": 0.0,
+          "end": 1.3
+        },
+        {
+          "word": "I'm",
+          "start": 3.7800000000000002,
+          "end": 4.48
+        },
+        {
+          "word": "a",
+          "start": 4.48,
+          "end": 4.7
+        },
+        {
+          "word": "monster!",
+          "start": 4.7,
+          "end": 5.64
+        },
+        {
+          "word": "Yeah!",
+          "start": 6.76,
+          "end": 6.92
+        }
+      ],
+      "segments": [
+        {
+          "text": " Oh!",
+          "start": 0.0,
+          "end": 1.3,
+          "words": [
+            {
+              "word": "Oh!",
+              "start": 0.0,
+              "end": 1.3
+            }
+          ]
+        },
+        {
+          "text": " I'm a monster!",
+          "start": 4.0,
+          "end": 5.64,
+          "words": [
+            {
+              "word": "I'm",
+              "start": 3.7800000000000002,
+              "end": 4.48
+            },
+            {
+              "word": "a",
+              "start": 4.48,
+              "end": 4.7
+            },
+            {
+              "word": "monster!",
+              "start": 4.7,
+              "end": 5.64
+            }
+          ]
+        },
+        {
+          "text": " Yeah!",
+          "start": 6.76,
+          "end": 6.92,
+          "words": [
+            {
+              "word": "Yeah!",
+              "start": 6.76,
+              "end": 6.92
+            }
+          ]
+        }
+      ]
+    },
+    "summary_segments": [
+      {
+        "start_time": 0.0,
+        "end_time": 1.3,
+        "importance": 9,
+        "topic": "introduction",
+        "reason": "Opening segment"
+      },
+      {
+        "start_time": 4.0,
+        "end_time": 5.64,
+        "importance": 8,
+        "topic": "main_content",
+        "reason": "Middle segment with key content"
+      },
+      {
+        "start_time": 0,
+        "end_time": 6.92,
+        "importance": 7,
+        "topic": "conclusion",
+        "reason": "Closing segment"
+      }
+    ]
+  },
+  "processed_at": "2025-08-12T10:39:45.356676",
+  "original_file": "samples/originals/tutorial_01.mp4",
+  "summary_file": "samples/summaries/tutorial_01_summary.mp4"
+}

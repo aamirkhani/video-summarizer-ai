@@ -1,0 +1,275 @@
+{
+  "id": "standup_meeting_01",
+  "title": "Daily Standup Meeting",
+  "category": "Business",
+  "description": "Agile team daily standup and progress updates",
+  "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+  "expected_duration": "60s",
+  "tags": [
+    "standup",
+    "agile",
+    "team"
+  ],
+  "processing_result": {
+    "input_video": "samples/originals/standup_meeting_01.mp4",
+    "output_video": "samples/summaries/standup_meeting_01_summary.mp4",
+    "transcript": {
+      "full_text": " Who are you voting for? Or what? Who are mondays? Oh! You're welcome. You're welcome. Thank you.",
+      "transcript": [
+        {
+          "word": "Who",
+          "start": 5.540000000000001,
+          "end": 6.94
+        },
+        {
+          "word": "are",
+          "start": 6.94,
+          "end": 6.94
+        },
+        {
+          "word": "you",
+          "start": 6.94,
+          "end": 10.64
+        },
+        {
+          "word": "voting",
+          "start": 10.64,
+          "end": 17.66
+        },
+        {
+          "word": "for?",
+          "start": 17.66,
+          "end": 19.1
+        },
+        {
+          "word": "Or",
+          "start": 19.1,
+          "end": 19.58
+        },
+        {
+          "word": "what?",
+          "start": 19.58,
+          "end": 21.74
+        },
+        {
+          "word": "Who",
+          "start": 21.74,
+          "end": 21.74
+        },
+        {
+          "word": "are",
+          "start": 21.74,
+          "end": 21.74
+        },
+        {
+          "word": "mondays?",
+          "start": 21.74,
+          "end": 22.46
+        },
+        {
+          "word": "Oh!",
+          "start": 28.1,
+          "end": 29.5
+        },
+        {
+          "word": "You're",
+          "start": 39.62,
+          "end": 40.42
+        },
+        {
+          "word": "welcome.",
+          "start": 40.42,
+          "end": 40.64
+        },
+        {
+          "word": "You're",
+          "start": 42.34,
+          "end": 43.7
+        },
+        {
+          "word": "welcome.",
+          "start": 43.7,
+          "end": 43.7
+        },
+        {
+          "word": "Thank",
+          "start": 52.46,
+          "end": 53.2
+        },
+        {
+          "word": "you.",
+          "start": 53.2,
+          "end": 53.26
+        }
+      ],
+      "segments": [
+        {
+          "text": " Who are you voting for?",
+          "start": 5.540000000000001,
+          "end": 19.1,
+          "words": [
+            {
+              "word": "Who",
+              "start": 5.540000000000001,
+              "end": 6.94
+            },
+            {
+              "word": "are",
+              "start": 6.94,
+              "end": 6.94
+            },
+            {
+              "word": "you",
+              "start": 6.94,
+              "end": 10.64
+            },
+            {
+              "word": "voting",
+              "start": 10.64,
+              "end": 17.66
+            },
+            {
+              "word": "for?",
+              "start": 17.66,
+              "end": 19.1
+            }
+          ]
+        },
+        {
+          "text": " Or what?",
+          "start": 19.1,
+          "end": 21.74,
+          "words": [
+            {
+              "word": "Or",
+              "start": 19.1,
+              "end": 19.58
+            },
+            {
+              "word": "what?",
+              "start": 19.58,
+              "end": 21.74
+            }
+          ]
+        },
+        {
+          "text": " Who are mondays?",
+          "start": 21.74,
+          "end": 22.46,
+          "words": [
+            {
+              "word": "Who",
+              "start": 21.74,
+              "end": 21.74
+            },
+            {
+              "word": "are",
+              "start": 21.74,
+              "end": 21.74
+            },
+            {
+              "word": "mondays?",
+              "start": 21.74,
+              "end": 22.46
+            }
+          ]
+        },
+        {
+          "text": " Oh!",
+          "start": 28.1,
+          "end": 29.5,
+          "words": [
+            {
+              "word": "Oh!",
+              "start": 28.1,
+              "end": 29.5
+            }
+          ]
+        },
+        {
+          "text": "",
+          "start": 29.5,
+          "end": 29.5,
+          "words": []
+        },
+        {
+          "text": " You're welcome.",
+          "start": 39.62,
+          "end": 40.64,
+          "words": [
+            {
+              "word": "You're",
+              "start": 39.62,
+              "end": 40.42
+            },
+            {
+              "word": "welcome.",
+              "start": 40.42,
+              "end": 40.64
+            }
+          ]
+        },
+        {
+          "text": " You're welcome.",
+          "start": 42.34,
+          "end": 43.7,
+          "words": [
+            {
+              "word": "You're",
+              "start": 42.34,
+              "end": 43.7
+            },
+            {
+              "word": "welcome.",
+              "start": 43.7,
+              "end": 43.7
+            }
+          ]
+        },
+        {
+          "text": " Thank you.",
+          "start": 52.46,
+          "end": 53.26,
+          "words": [
+            {
+              "word": "Thank",
+              "start": 52.46,
+              "end": 53.2
+            },
+            {
+              "word": "you.",
+              "start": 53.2,
+              "end": 53.26
+            }
+          ]
+        }
+      ]
+    },
+    "summary_segments": [
+      {
+        "start_time": 5.540000000000001,
+        "end_time": 19.1,
+        "importance": 9,
+        "topic": "introduction",
+        "reason": "Opening segment"
+      },
+      {
+        "start_time": 29.5,
+        "end_time": 29.5,
+        "importance": 8,
+        "topic": "main_content",
+        "reason": "Middle segment with key content"
+      },
+      {
+        "start_time": 38.26,
+        "end_time": 53.26,
+        "importance": 7,
+        "topic": "conclusion",
+        "reason": "Closing segment"
+      }
+    ]
+  },
+  "processed_at": "2025-08-12T10:39:29.642268",
+  "original_file": "samples/originals/standup_meeting_01.mp4",
+  "summary_file": "samples/summaries/standup_meeting_01_summary.mp4"
+}

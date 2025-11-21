@@ -1,0 +1,777 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="main-container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary mb-3">
+                    <i class="fas fa-magic me-3"></i>VideoSense AI
+                </h1>
+                <p class="lead text-muted">
+                    Revolutionary <span class="ai-processing-text">AI-powered</span> video summarization platform. Transform hours of content into minutes of insights.
+                </p>
+            </div>
+
+            <!-- Sample Gallery Preview -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="video-frame-effect p-4 mb-4">
+                        <h2 class="mb-4">See VideoSense AI in Action</h2>
+                        <p class="lead mb-4">Watch real-time AI video summaries (click tiles to preview)</p>
+                        
+                        <!-- Auto-Playing Video Tiles -->
+                        <div class="video-tiles-container mb-4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="video-tile" data-video-id="business_meeting_01">
+                                        <div class="video-preview">
+                                            <video class="tile-video" muted loop preload="metadata">
+                                                <source src="/serve_sample/business_meeting_01/summary" type="video/mp4">
+                                                <div class="video-error">Video not available</div>
+                                            </video>
+                                            <div class="video-overlay">
+                                                <div class="video-info">
+                                                    <h6>Business Meeting</h6>
+                                                    <small>10:56 → 0:16 (37x faster)</small>
+                                                </div>
+                                                <div class="play-indicator">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-footer">
+                                            <span class="badge bg-primary">Business</span>
+                                            <span class="compression-badge">37x compression</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="video-tile" data-video-id="documentary_01">
+                                        <div class="video-preview">
+                                            <video class="tile-video" muted loop preload="metadata">
+                                                <source src="/serve_sample/documentary_01/summary" type="video/mp4">
+                                                <div class="video-error">Video not available</div>
+                                            </video>
+                                            <div class="video-overlay">
+                                                <div class="video-info">
+                                                    <h6>Climate Documentary</h6>
+                                                    <small>14:48 → 0:17 (52x faster)</small>
+                                                </div>
+                                                <div class="play-indicator">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-footer">
+                                            <span class="badge bg-success">Education</span>
+                                            <span class="compression-badge">52x compression</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="video-tile" data-video-id="podcast_01">
+                                        <div class="video-preview">
+                                            <video class="tile-video" muted loop preload="metadata">
+                                                <source src="/serve_sample/podcast_01/summary" type="video/mp4">
+                                                <div class="video-error">Video not available</div>
+                                            </video>
+                                            <div class="video-overlay">
+                                                <div class="video-info">
+                                                    <h6>Tech Podcast</h6>
+                                                    <small>9:30 → 0:25 (23x faster)</small>
+                                                </div>
+                                                <div class="play-indicator">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-footer">
+                                            <span class="badge bg-warning">Entertainment</span>
+                                            <span class="compression-badge">23x compression</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="video-tile" data-video-id="interview_01">
+                                        <div class="video-preview">
+                                            <video class="tile-video" muted loop preload="metadata">
+                                                <source src="/serve_sample/interview_01/summary" type="video/mp4">
+                                                <div class="video-error">Video not available</div>
+                                            </video>
+                                            <div class="video-overlay">
+                                                <div class="video-info">
+                                                    <h6>CEO Interview</h6>
+                                                    <small>9:15 → 0:19 (29x faster)</small>
+                                                </div>
+                                                <div class="play-indicator">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-footer">
+                                            <span class="badge bg-warning">Entertainment</span>
+                                            <span class="compression-badge">29x compression</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="video-tile" data-video-id="university_lecture_01">
+                                        <div class="video-preview">
+                                            <video class="tile-video" muted loop preload="metadata">
+                                                <source src="/serve_sample/university_lecture_01/summary" type="video/mp4">
+                                                <div class="video-error">Video not available</div>
+                                            </video>
+                                            <div class="video-overlay">
+                                                <div class="video-info">
+                                                    <h6>CS Lecture</h6>
+                                                    <small>0:15 → 0:16 (1x speed)</small>
+                                                </div>
+                                                <div class="play-indicator">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-footer">
+                                            <span class="badge bg-success">Education</span>
+                                            <span class="compression-badge">Perfect summary</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="video-tile" data-video-id="training_session_01">
+                                        <div class="video-preview">
+                                            <video class="tile-video" muted loop preload="metadata">
+                                                <source src="/serve_sample/training_session_01/summary" type="video/mp4">
+                                                <div class="video-error">Video not available</div>
+                                            </video>
+                                            <div class="video-overlay">
+                                                <div class="video-info">
+                                                    <h6>Training Session</h6>
+                                                    <small>10:54 → 0:22 (30x faster)</small>
+                                                </div>
+                                                <div class="play-indicator">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-footer">
+                                            <span class="badge bg-primary">Business</span>
+                                            <span class="compression-badge">30x compression</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="auto-play-controls mb-4">
+                            <button class="btn btn-outline-primary me-2" id="pauseAutoPlay">
+                                <i class="fas fa-pause me-1"></i>Pause Auto-Play
+                            </button>
+                            <button class="btn btn-outline-secondary" id="resumeAutoPlay" style="display: none;">
+                                <i class="fas fa-play me-1"></i>Resume Auto-Play
+                            </button>
+                            <span class="ms-3 text-muted">
+                                <i class="fas fa-info-circle me-1"></i>Videos play naturally and progress to next when finished
+                            </span>
+                        </div>
+                        
+                        <div class="btn-group" role="group">
+                            <a href="{{ url_for('samples') }}" class="btn btn-outline-primary btn-lg me-3 success-sparkle">
+                                <i class="fas fa-play-circle me-2"></i>View Full Gallery
+                            </a>
+                            <button class="btn btn-primary btn-lg" onclick="document.getElementById('uploadSection').scrollIntoView({ behavior: 'smooth' })">
+                                <i class="fas fa-upload me-2"></i>Try Your Own Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Section -->
+            <div class="row mb-5" id="uploadSection">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">
+                                <i class="fas fa-cloud-upload-alt me-2"></i>Upload Your Video
+                            </h3>
+                            
+                            <form id="uploadForm" enctype="multipart/form-data">
+                                <!-- Upload Zone -->
+                                <div class="upload-zone mb-4" id="uploadZone">
+                                    <i class="fas fa-video fa-3x text-primary mb-3"></i>
+                                    <h4>Drag & Drop Video Here</h4>
+                                    <p class="text-muted mb-3">or click to browse files</p>
+                                    <input type="file" id="videoFile" name="file" accept="video/*" style="display: none;">
+                                    <button type="button" class="btn btn-primary" onclick="document.getElementById('videoFile').click()">
+                                        <i class="fas fa-folder-open me-2"></i>Choose File
+                                    </button>
+                                </div>
+
+                                <!-- Options -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Summary Type</label>
+                                        <select class="form-select" name="summary_type">
+                                            <option value="auto">Auto-Detect Best Moments</option>
+                                            <option value="meeting_highlights">Meeting Highlights</option>
+                                            <option value="educational">Educational Key Points</option>
+                                            <option value="entertainment">Entertainment Clips</option>
+                                            <option value="news_brief">News Brief</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Target Length</label>
+                                        <select class="form-select" name="target_length">
+                                            <option value="30_seconds">30 Seconds</option>
+                                            <option value="2_minutes" selected>2 Minutes</option>
+                                            <option value="5_minutes">5 Minutes</option>
+                                            <option value="custom">Custom Length</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                                        <i class="fas fa-magic me-2"></i>Create AI Summary
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Processing Status -->
+            <div class="row mb-5" id="processingSection" style="display: none;">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <i class="fas fa-cogs me-2"></i>Processing Your Video
+                            </h4>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span id="statusText">Initializing...</span>
+                                    <span id="progressText">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-microphone"></i>
+                                    </div>
+                                    <h6>Audio Analysis</h6>
+                                    <p class="text-muted small">Extracting speech with precise timestamps</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h6>AI Processing</h6>
+                                    <p class="text-muted small">Identifying key moments and insights</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <h6>Video Assembly</h6>
+                                    <p class="text-muted small">Creating your intelligent summary</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="row mb-5" id="resultsSection" style="display: none;">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title text-success">
+                                <i class="fas fa-check-circle me-2"></i>Summary Complete!
+                            </h4>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-3">
+                                    <div class="stats-card">
+                                        <h3 id="originalDuration">--</h3>
+                                        <small>Original Duration</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stats-card">
+                                        <h3 id="summaryDuration">--</h3>
+                                        <small>Summary Duration</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stats-card">
+                                        <h3 id="compressionRatio">--</h3>
+                                        <small>Compression Ratio</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stats-card">
+                                        <h3 id="segmentCount">--</h3>
+                                        <small>Key Segments</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Selected Segments</h5>
+                                    <div id="segmentsList"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Download Options</h5>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary btn-lg" id="previewBtn">
+                                            <i class="fas fa-play me-2"></i>Preview Videos
+                                        </button>
+                                        <button class="btn btn-success" id="downloadBtn">
+                                            <i class="fas fa-download me-2"></i>Download Summary
+                                        </button>
+                                        <button class="btn btn-outline-secondary" id="downloadOriginalBtn">
+                                            <i class="fas fa-download me-2"></i>Download Original
+                                        </button>
+                                        <button class="btn btn-outline-primary" onclick="location.reload()">
+                                            <i class="fas fa-plus me-2"></i>Process Another Video
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-5">
+                <div class="card bg-light video-frame-effect">
+                    <div class="card-body py-5">
+                        <h3 class="mb-3">Ready to Transform Your Videos?</h3>
+                        <p class="lead mb-4">Join thousands of users who are saving hours with <span class="ai-processing-text">AI-powered</span> video summarization</p>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-primary btn-lg success-sparkle" onclick="document.getElementById('uploadSection').scrollIntoView({ behavior: 'smooth' })">
+                                <i class="fas fa-upload me-2"></i>Upload Your Video
+                            </button>
+                            <a href="{{ url_for('samples') }}" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-play-circle me-2"></i>Browse Samples
+                            </a>
+                            <button class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#behindScenesModal">
+                                <i class="fas fa-magic me-2"></i>Behind the Scenes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let currentJobId = null;
+let statusCheckInterval = null;
+
+// Auto-playing video tiles functionality
+class VideoTileManager {
+    constructor() {
+        this.tiles = document.querySelectorAll('.video-tile');
+        this.videos = document.querySelectorAll('.tile-video');
+        this.currentIndex = 0;
+        this.autoPlayInterval = null;
+        this.isAutoPlaying = true;
+        this.rotationDelay = 1000; // 1 second delay between videos
+        
+        this.init();
+    }
+    
+    init() {
+        // Add click handlers to tiles
+        this.tiles.forEach((tile, index) => {
+            tile.addEventListener('click', () => this.playVideo(index));
+        });
+        
+        // Add video ended event listeners for natural progression
+        this.videos.forEach((video, index) => {
+            video.addEventListener('ended', () => {
+                if (this.isAutoPlaying) {
+                    setTimeout(() => {
+                        this.playNextVideo();
+                    }, this.rotationDelay);
+                }
+            });
+            
+            video.addEventListener('loadeddata', () => {
+                console.log(`Video ${index} loaded and ready`);
+            });
+        });
+        
+        // Add control button handlers
+        document.getElementById('pauseAutoPlay').addEventListener('click', () => this.pauseAutoPlay());
+        document.getElementById('resumeAutoPlay').addEventListener('click', () => this.resumeAutoPlay());
+        
+        // Start with first video after a short delay
+        setTimeout(() => this.startAutoPlay(), 1000);
+    }
+    
+    playVideo(index) {
+        // Stop current video
+        this.stopAllVideos();
+        
+        // Play selected video
+        const tile = this.tiles[index];
+        const video = this.videos[index];
+        
+        if (video && video.readyState >= 2) { // Video is loaded
+            tile.classList.add('playing', 'auto-playing');
+            this.currentIndex = index;
+            
+            video.play().catch(e => {
+                console.log('Video play failed:', e);
+                // Show static preview instead
+                this.showStaticPreview(tile);
+                // Try next video if current fails
+                if (this.isAutoPlaying) {
+                    setTimeout(() => this.playNextVideo(), 2000);
+                }
+            });
+            
+        } else if (video && video.readyState === 0) {
+            // Video not loaded, show loading state
+            tile.classList.add('loading');
+            setTimeout(() => {
+                tile.classList.remove('loading');
+                // If still not loaded, show static preview
+                if (video.readyState === 0) {
+                    this.showStaticPreview(tile);
+                    if (this.isAutoPlaying) {
+                        setTimeout(() => this.playNextVideo(), 2000);
+                    }
+                } else {
+                    this.playVideo(index); // Retry
+                }
+            }, 3000);
+        } else {
+            // Show static preview as fallback
+            this.showStaticPreview(tile);
+            if (this.isAutoPlaying) {
+                setTimeout(() => this.playNextVideo(), 2000);
+            }
+        }
+    }
+    
+    showStaticPreview(tile) {
+        // Show static preview with click-to-view functionality
+        const videoId = tile.dataset.videoId;
+        const overlay = tile.querySelector('.video-overlay');
+        
+        tile.classList.add('static-preview');
+        overlay.innerHTML = `
+            <div class="video-info">
+                <h6>${overlay.querySelector('h6').textContent}</h6>
+                <small>${overlay.querySelector('small').textContent}</small>
+            </div>
+            <div class="static-play-button" onclick="window.open('/sample_preview/${videoId}', '_blank')">
+                <i class="fas fa-external-link-alt"></i>
+                <span>View Full Preview</span>
+            </div>
+        `;
+        overlay.style.opacity = '1';
+    }
+    
+    playNextVideo() {
+        if (!this.isAutoPlaying) return;
+        
+        // Move to next video
+        this.currentIndex = (this.currentIndex + 1) % this.tiles.length;
+        this.playVideo(this.currentIndex);
+    }
+    
+    stopAllVideos() {
+        this.videos.forEach(video => {
+            video.pause();
+            video.currentTime = 0;
+        });
+        
+        this.tiles.forEach(tile => {
+            tile.classList.remove('playing', 'auto-playing', 'loading');
+        });
+    }
+    
+    startAutoPlay() {
+        if (!this.isAutoPlaying) return;
+        
+        // Start with first video
+        this.playVideo(this.currentIndex);
+    }
+    
+    pauseAutoPlay() {
+        this.isAutoPlaying = false;
+        this.stopAllVideos();
+        
+        // Update UI
+        document.getElementById('pauseAutoPlay').style.display = 'none';
+        document.getElementById('resumeAutoPlay').style.display = 'inline-block';
+    }
+    
+    resumeAutoPlay() {
+        this.isAutoPlaying = true;
+        this.startAutoPlay();
+        
+        // Update UI
+        document.getElementById('pauseAutoPlay').style.display = 'inline-block';
+        document.getElementById('resumeAutoPlay').style.display = 'none';
+    }
+}
+
+// Initialize video tile manager when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const videoTileManager = new VideoTileManager();
+    
+    // Preload videos for better performance
+    const videos = document.querySelectorAll('.tile-video');
+    videos.forEach(video => {
+        video.addEventListener('loadeddata', function() {
+            console.log('Video loaded:', video.src);
+        });
+        
+        video.addEventListener('error', function() {
+            console.log('Video load error:', video.src);
+            console.log('Error details:', video.error);
+            // Hide tile if video fails to load
+            const tile = video.closest('.video-tile');
+            tile.style.display = 'none';
+            
+            // Show error message
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'alert alert-warning';
+            errorDiv.innerHTML = `<i class="fas fa-exclamation-triangle me-2"></i>Video "${video.closest('.video-tile').dataset.videoId}" failed to load`;
+            document.querySelector('.video-tiles-container').appendChild(errorDiv);
+        });
+        
+        video.addEventListener('loadstart', function() {
+            console.log('Video loading started:', video.src);
+            video.closest('.video-tile').classList.add('loading');
+        });
+        
+        video.addEventListener('canplay', function() {
+            console.log('Video can play:', video.src);
+            video.closest('.video-tile').classList.remove('loading');
+        });
+    });
+});
+
+// File upload handling
+document.getElementById('videoFile').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        const uploadZone = document.getElementById('uploadZone');
+        uploadZone.innerHTML = `
+            <i class="fas fa-file-video fa-3x text-success mb-3"></i>
+            <h4>${file.name}</h4>
+            <p class="text-muted">File size: ${(file.size / (1024*1024)).toFixed(2)} MB</p>
+        `;
+    }
+});
+
+// Drag and drop handling
+const uploadZone = document.getElementById('uploadZone');
+
+uploadZone.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    uploadZone.classList.add('dragover');
+});
+
+uploadZone.addEventListener('dragleave', function(e) {
+    e.preventDefault();
+    uploadZone.classList.remove('dragover');
+});
+
+uploadZone.addEventListener('drop', function(e) {
+    e.preventDefault();
+    uploadZone.classList.remove('dragover');
+    
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+        document.getElementById('videoFile').files = files;
+        document.getElementById('videoFile').dispatchEvent(new Event('change'));
+    }
+});
+
+// Form submission
+document.getElementById('uploadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const fileInput = document.getElementById('videoFile');
+    if (!fileInput.files[0]) {
+        alert('Please select a video file first!');
+        return;
+    }
+    
+    const formData = new FormData(this);
+    const submitBtn = document.getElementById('submitBtn');
+    
+    // Show loading state
+    submitBtn.innerHTML = '<span class="loading-spinner me-2"></span>Uploading...';
+    submitBtn.disabled = true;
+    
+    fetch('/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            throw new Error(data.error);
+        }
+        
+        currentJobId = data.job_id;
+        showProcessingSection();
+        startStatusChecking();
+    })
+    .catch(error => {
+        alert('Error: ' + error.message);
+        submitBtn.innerHTML = '<i class="fas fa-magic me-2"></i>Create AI Summary';
+        submitBtn.disabled = false;
+    });
+});
+
+function showProcessingSection() {
+    document.getElementById('processingSection').style.display = 'block';
+    document.getElementById('processingSection').scrollIntoView({ behavior: 'smooth' });
+}
+
+function startStatusChecking() {
+    statusCheckInterval = setInterval(checkStatus, 2000);
+}
+
+function checkStatus() {
+    if (!currentJobId) return;
+    
+    fetch(`/status/${currentJobId}`)
+    .then(response => response.json())
+    .then(data => {
+        updateProgress(data);
+        
+        if (data.status === 'completed') {
+            clearInterval(statusCheckInterval);
+            showResults();
+        } else if (data.status === 'error') {
+            clearInterval(statusCheckInterval);
+            showError(data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Status check error:', error);
+    });
+}
+
+function updateProgress(data) {
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const statusText = document.getElementById('statusText');
+    
+    const progress = data.progress || 0;
+    progressBar.style.width = progress + '%';
+    progressText.textContent = progress + '%';
+    statusText.textContent = data.stage || 'Processing...';
+}
+
+function showResults() {
+    fetch(`/result/${currentJobId}`)
+    .then(response => response.json())
+    .then(data => {
+        displayResults(data);
+        document.getElementById('resultsSection').style.display = 'block';
+        document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
+    })
+    .catch(error => {
+        console.error('Results fetch error:', error);
+    });
+}
+
+function displayResults(data) {
+    const result = data.result;
+    const segments = result.summary_segments;
+    
+    // Calculate durations
+    const originalDuration = 596.47; // This should come from the actual video
+    const summaryDuration = segments.reduce((total, seg) => 
+        total + (seg.end_time - seg.start_time), 0);
+    const compressionRatio = (originalDuration / summaryDuration).toFixed(1);
+    
+    // Update stats
+    document.getElementById('originalDuration').textContent = formatDuration(originalDuration);
+    document.getElementById('summaryDuration').textContent = formatDuration(summaryDuration);
+    document.getElementById('compressionRatio').textContent = compressionRatio + 'x';
+    document.getElementById('segmentCount').textContent = segments.length;
+    
+    // Display segments
+    const segmentsList = document.getElementById('segmentsList');
+    segmentsList.innerHTML = segments.map((seg, i) => `
+        <div class="card mb-2">
+            <div class="card-body py-2">
+                <h6 class="mb-1">${i + 1}. ${seg.topic.replace('_', ' ').toUpperCase()}</h6>
+                <small class="text-muted">
+                    ${formatTime(seg.start_time)} - ${formatTime(seg.end_time)} 
+                    (${formatDuration(seg.end_time - seg.start_time)})
+                    <span class="badge bg-primary ms-2">${seg.importance}/10</span>
+                </small>
+                <p class="small mb-0 mt-1">${seg.reason}</p>
+            </div>
+        </div>
+    `).join('');
+    
+    // Setup download button
+    document.getElementById('downloadBtn').onclick = function() {
+        window.location.href = `/download/${currentJobId}`;
+    };
+    
+    // Setup preview button
+    document.getElementById('previewBtn').onclick = function() {
+        window.location.href = `/preview/${currentJobId}`;
+    };
+    
+    // Setup download original button
+    document.getElementById('downloadOriginalBtn').onclick = function() {
+        window.location.href = `/download_original/${currentJobId}`;
+    };
+}
+
+function showError(error) {
+    alert('Processing failed: ' + error);
+    location.reload();
+}
+
+function formatDuration(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+}
+
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+}
+</script>
+{% endblock %}

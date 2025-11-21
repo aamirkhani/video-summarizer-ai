@@ -1,0 +1,53 @@
+
+<!-- Add to base.html head section -->
+<link href="{{ url_for('static', filename='css/artwork.css') }}" rel="stylesheet">
+
+<!-- Hero Section with Animated Background -->
+<div class="hero-gradient neural-network-bg">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold text-white mb-4">
+                    <span class="glow-effect">VideoSense AI</span>
+                </h1>
+                <p class="lead text-white mb-4">
+                    Transform hours of video into minutes of insights with 
+                    <span class="ai-processing-dots">AI-powered precision</span>
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="video-frame-effect">
+                    <img src="{{ url_for('static', filename='svg/ai_brain_icon.svg') }}" 
+                         alt="AI Brain" class="img-fluid" style="max-width: 200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Feature Cards with SVG Icons -->
+<div class="row">
+    <div class="col-md-4 text-center mb-4">
+        <div class="feature-icon glow-effect">
+            <img src="{{ url_for('static', filename='svg/video_processing_icon.svg') }}" 
+                 alt="Video Processing" style="width: 60px; height: 60px;">
+        </div>
+        <h5>AI Processing</h5>
+        <p class="text-muted">Advanced video analysis with neural networks</p>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+        <div class="feature-icon success-sparkle">
+            <img src="{{ url_for('static', filename='svg/sync_icon.svg') }}" 
+                 alt="Synchronized Playback" style="width: 60px; height: 60px;">
+        </div>
+        <h5>Synchronized Playback</h5>
+        <p class="text-muted">Side-by-side comparison with perfect timing</p>
+    </div>
+</div>
+
+<!-- Data Stream Background for Processing Section -->
+<div class="data-stream">
+    <div class="container py-5">
+        <!-- Processing content here -->
+    </div>
+</div>

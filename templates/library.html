@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+
+{% block title %}Library - VideoSense AI{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="main-container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-primary mb-3">
+                    <i class="fas fa-folder me-3"></i>Video Library
+                </h1>
+                <p class="lead text-muted">
+                    Manage and access all your processed video summaries
+                </p>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3>{{ summaries|length }}</h3>
+                        <small>Total Summaries</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3>{{ summaries.values()|selectattr('result.summary_segments')|map(attribute='result.summary_segments')|map('length')|sum }}</h3>
+                        <small>Total Segments</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3>{% set total_time = summaries.values()|selectattr('result.summary_segments')|map(attribute='result.summary_segments')|list %}
+                        {% if total_time %}
+                            {{ "%.1f"|format(total_time|map('map', attribute='end_time')|map('sum')|sum - total_time|map('map', attribute='start_time')|map('sum')|sum) }}s
+                        {% else %}
+                            0s
+                        {% endif %}</h3>
+                        <small>Total Summary Time</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3>AI</h3>
+                        <small>Processing Engine</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summaries Grid -->
+            {% if summaries %}
+            <div class="row">
+                {% for job_id, summary in summaries.items() %}
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">
+                                <i class="fas fa-video me-2 text-primary"></i>
+                                {{ summary.input_file[:30] }}{% if summary.input_file|length > 30 %}...{% endif %}
+                            </h5>
+                            <span class="status-badge status-completed">
+                                <i class="fas fa-check me-1"></i>Completed
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <!-- Summary Info -->
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Summary Type</small>
+                                    <div class="fw-bold">{{ summary.summary_type.replace('_', ' ').title() }}</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Target Length</small>
+                                    <div class="fw-bold">{{ summary.target_length.replace('_', ' ').title() }}</div>
+                                </div>
+                            </div>
+
+                            <!-- Segments Preview -->
+                            <div class="mb-3">
+                                <small class="text-muted">Key Segments ({{ summary.result.summary_segments|length }})</small>
+                                {% for segment in summary.result.summary_segments[:3] %}
+                                <div class="d-flex justify-content-between align-items-center py-1">
+                                    <span class="small">{{ loop.index }}. {{ segment.topic.replace('_', ' ').title() }}</span>
+                                    <span class="badge bg-primary">{{ segment.importance }}/10</span>
+                                </div>
+                                {% endfor %}
+                                {% if summary.result.summary_segments|length > 3 %}
+                                <div class="small text-muted">... and {{ summary.result.summary_segments|length - 3 }} more</div>
+                                {% endif %}
+                            </div>
+
+                            <!-- Timestamps -->
+                            <div class="mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>
+                                    Completed: {{ summary.completion_time[:19].replace('T', ' ') }}
+                                </small>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="d-grid gap-2">
+                                <a href="/preview/{{ job_id }}" class="btn btn-primary">
+                                    <i class="fas fa-play me-2"></i>Preview Videos
+                                </a>
+                                <a href="/download/{{ job_id }}" class="btn btn-success">
+                                    <i class="fas fa-download me-2"></i>Download Summary
+                                </a>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showDetails('{{ job_id }}')">
+                                    <i class="fas fa-info-circle me-2"></i>View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <!-- Empty State -->
+            <div class="text-center py-5">
+                <i class="fas fa-folder-open fa-4x text-muted mb-4"></i>
+                <h3 class="text-muted">No summaries yet</h3>
+                <p class="text-muted mb-4">Start by uploading and processing your first video</p>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">
+                    <i class="fas fa-plus me-2"></i>Create First Summary
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Details Modal -->
+<div class="modal fade" id="detailsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-info-circle me-2"></i>Summary Details
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function showDetails(jobId) {
+    fetch(`/result/${jobId}`)
+    .then(response => response.json())
+    .then(data => {
+        const modalBody = document.getElementById('modalBody');
+        const segments = data.result.summary_segments;
+        
+        modalBody.innerHTML = `
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h6>File Information</h6>
+                    <table class="table table-sm">
+                        <tr><td>Input File:</td><td>${data.input_file}</td></tr>
+                        <tr><td>Output File:</td><td>${data.output_file}</td></tr>
+                        <tr><td>Summary Type:</td><td>${data.summary_type.replace('_', ' ')}</td></tr>
+                        <tr><td>Target Length:</td><td>${data.target_length.replace('_', ' ')}</td></tr>
+                        <tr><td>Completed:</td><td>${data.completion_time.replace('T', ' ').substring(0, 19)}</td></tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h6>Processing Statistics</h6>
+                    <table class="table table-sm">
+                        <tr><td>Total Segments:</td><td>${segments.length}</td></tr>
+                        <tr><td>Average Importance:</td><td>${(segments.reduce((sum, seg) => sum + seg.importance, 0) / segments.length).toFixed(1)}/10</td></tr>
+                        <tr><td>Total Duration:</td><td>${segments.reduce((sum, seg) => sum + (seg.end_time - seg.start_time), 0).toFixed(1)}s</td></tr>
+                    </table>
+                </div>
+            </div>
+            
+            <h6>Detailed Segments</h6>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Topic</th>
+                            <th>Time Range</th>
+                            <th>Duration</th>
+                            <th>Importance</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${segments.map((seg, i) => `
+                            <tr>
+                                <td>${i + 1}</td>
+                                <td><span class="badge bg-secondary">${seg.topic.replace('_', ' ')}</span></td>
+                                <td>${formatTime(seg.start_time)} - ${formatTime(seg.end_time)}</td>
+                                <td>${(seg.end_time - seg.start_time).toFixed(1)}s</td>
+                                <td><span class="badge bg-primary">${seg.importance}/10</span></td>
+                                <td class="small">${seg.reason}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        `;
+        
+        new bootstrap.Modal(document.getElementById('detailsModal')).show();
+    })
+    .catch(error => {
+        console.error('Error loading details:', error);
+        alert('Error loading summary details');
+    });
+}
+
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+}
+</script>
+{% endblock %}

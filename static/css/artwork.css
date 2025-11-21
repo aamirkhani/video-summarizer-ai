@@ -1,0 +1,143 @@
+
+/* VideoSense AI - Custom Artwork CSS */
+
+/* Animated Background Gradient */
+.hero-gradient {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* AI Processing Animation */
+.ai-processing-dots {
+    display: inline-block;
+    position: relative;
+}
+
+.ai-processing-dots::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #667eea;
+    animation: aiDots 1.5s infinite;
+}
+
+@keyframes aiDots {
+    0%, 20% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Video Frame Animation */
+.video-frame-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-frame-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: scanLine 3s infinite;
+}
+
+@keyframes scanLine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Neural Network Pattern */
+.neural-network-bg {
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+    background-size: 300px 300px, 400px 400px, 200px 200px;
+    animation: networkFloat 20s ease-in-out infinite;
+}
+
+@keyframes networkFloat {
+    0%, 100% { background-position: 0% 0%, 100% 100%, 50% 50%; }
+    50% { background-position: 100% 100%, 0% 0%, 0% 100%; }
+}
+
+/* Glowing Elements */
+.glow-effect {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    animation: pulseGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+    from { box-shadow: 0 0 20px rgba(102, 126, 234, 0.3); }
+    to { box-shadow: 0 0 30px rgba(102, 126, 234, 0.6); }
+}
+
+/* Data Stream Effect */
+.data-stream {
+    position: relative;
+    overflow: hidden;
+}
+
+.data-stream::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        rgba(102, 126, 234, 0.1) 10px,
+        rgba(102, 126, 234, 0.1) 20px
+    );
+    animation: dataFlow 2s linear infinite;
+}
+
+@keyframes dataFlow {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(20px); }
+}
+
+/* Success Sparkle Effect */
+.success-sparkle {
+    position: relative;
+}
+
+.success-sparkle::before,
+.success-sparkle::after {
+    content: '✨';
+    position: absolute;
+    font-size: 1.2rem;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.success-sparkle::before {
+    top: -10px;
+    right: -10px;
+    animation-delay: 0s;
+}
+
+.success-sparkle::after {
+    bottom: -10px;
+    left: -10px;
+    animation-delay: 1s;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1); }
+}

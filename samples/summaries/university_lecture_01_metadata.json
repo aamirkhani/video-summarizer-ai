@@ -1,0 +1,274 @@
+{
+  "id": "university_lecture_01",
+  "title": "Computer Science Lecture",
+  "category": "Education",
+  "description": "Introduction to machine learning algorithms",
+  "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  "expected_duration": "15s",
+  "tags": [
+    "lecture",
+    "computer-science",
+    "ml"
+  ],
+  "processing_result": {
+    "input_video": "samples/originals/university_lecture_01.mp4",
+    "output_video": "samples/summaries/university_lecture_01_summary.mp4",
+    "transcript": {
+      "full_text": " The end The end The end The end The end He\ufffd\ufffd The end The end",
+      "transcript": [
+        {
+          "word": "The",
+          "start": 5.439999999999999,
+          "end": 6.56
+        },
+        {
+          "word": "end",
+          "start": 6.56,
+          "end": 6.7
+        },
+        {
+          "word": "The",
+          "start": 6.7,
+          "end": 7.28
+        },
+        {
+          "word": "end",
+          "start": 7.28,
+          "end": 8.86
+        },
+        {
+          "word": "The",
+          "start": 8.86,
+          "end": 10.46
+        },
+        {
+          "word": "end",
+          "start": 10.46,
+          "end": 10.54
+        },
+        {
+          "word": "The",
+          "start": 10.54,
+          "end": 11.08
+        },
+        {
+          "word": "end",
+          "start": 11.08,
+          "end": 11.32
+        },
+        {
+          "word": "The",
+          "start": 11.32,
+          "end": 11.66
+        },
+        {
+          "word": "end",
+          "start": 11.66,
+          "end": 11.66
+        },
+        {
+          "word": "He\ufffd\ufffd",
+          "start": 11.66,
+          "end": 12.86
+        },
+        {
+          "word": "The",
+          "start": 12.86,
+          "end": 13.3
+        },
+        {
+          "word": "end",
+          "start": 13.3,
+          "end": 13.3
+        },
+        {
+          "word": "The",
+          "start": 13.3,
+          "end": 15.02
+        },
+        {
+          "word": "end",
+          "start": 15.02,
+          "end": 15.02
+        }
+      ],
+      "segments": [
+        {
+          "text": " The end",
+          "start": 5.439999999999999,
+          "end": 6.7,
+          "words": [
+            {
+              "word": "The",
+              "start": 5.439999999999999,
+              "end": 6.56
+            },
+            {
+              "word": "end",
+              "start": 6.56,
+              "end": 6.7
+            }
+          ]
+        },
+        {
+          "text": "",
+          "start": 6.7,
+          "end": 6.7,
+          "words": []
+        },
+        {
+          "text": " The end",
+          "start": 6.7,
+          "end": 8.86,
+          "words": [
+            {
+              "word": "The",
+              "start": 6.7,
+              "end": 7.28
+            },
+            {
+              "word": "end",
+              "start": 7.28,
+              "end": 8.86
+            }
+          ]
+        },
+        {
+          "text": " The end",
+          "start": 8.86,
+          "end": 10.54,
+          "words": [
+            {
+              "word": "The",
+              "start": 8.86,
+              "end": 10.46
+            },
+            {
+              "word": "end",
+              "start": 10.46,
+              "end": 10.54
+            }
+          ]
+        },
+        {
+          "text": " The end",
+          "start": 10.54,
+          "end": 11.32,
+          "words": [
+            {
+              "word": "The",
+              "start": 10.54,
+              "end": 11.08
+            },
+            {
+              "word": "end",
+              "start": 11.08,
+              "end": 11.32
+            }
+          ]
+        },
+        {
+          "text": " The end",
+          "start": 11.32,
+          "end": 11.66,
+          "words": [
+            {
+              "word": "The",
+              "start": 11.32,
+              "end": 11.66
+            },
+            {
+              "word": "end",
+              "start": 11.66,
+              "end": 11.66
+            }
+          ]
+        },
+        {
+          "text": " He\ufffd\ufffd",
+          "start": 11.66,
+          "end": 12.86,
+          "words": [
+            {
+              "word": "He\ufffd\ufffd",
+              "start": 11.66,
+              "end": 12.86
+            }
+          ]
+        },
+        {
+          "text": " The end",
+          "start": 12.86,
+          "end": 13.3,
+          "words": [
+            {
+              "word": "The",
+              "start": 12.86,
+              "end": 13.3
+            },
+            {
+              "word": "end",
+              "start": 13.3,
+              "end": 13.3
+            }
+          ]
+        },
+        {
+          "text": " The end",
+          "start": 13.3,
+          "end": 15.02,
+          "words": [
+            {
+              "word": "The",
+              "start": 13.3,
+              "end": 15.02
+            },
+            {
+              "word": "end",
+              "start": 15.02,
+              "end": 15.02
+            }
+          ]
+        },
+        {
+          "text": "",
+          "start": 15.02,
+          "end": 15.02,
+          "words": []
+        },
+        {
+          "text": "",
+          "start": 15.02,
+          "end": 15.02,
+          "words": []
+        }
+      ]
+    },
+    "summary_segments": [
+      {
+        "start_time": 5.439999999999999,
+        "end_time": 6.7,
+        "importance": 9,
+        "topic": "introduction",
+        "reason": "Opening segment"
+      },
+      {
+        "start_time": 11.32,
+        "end_time": 11.66,
+        "importance": 8,
+        "topic": "main_content",
+        "reason": "Middle segment with key content"
+      },
+      {
+        "start_time": 0.019999999999999574,
+        "end_time": 15.02,
+        "importance": 7,
+        "topic": "conclusion",
+        "reason": "Closing segment"
+      }
+    ]
+  },
+  "processed_at": "2025-08-12T10:39:39.288913",
+  "original_file": "samples/originals/university_lecture_01.mp4",
+  "summary_file": "samples/summaries/university_lecture_01_summary.mp4"
+}
